@@ -12,13 +12,19 @@
 public class SortedCheck {
 
 	public static void main(String[] args) {
-//  providing test values identical to the PracticeIt tests. isSorted method put in
-//  print statements to display results.
-		System.out.println(isSorted(new double[]{16.1, 12.3, 22.2, 14.4}));
-		System.out.println(isSorted(new double[]{1.5, 4.3, 7.0, 19.5, 25.1, 46.2}));
-		System.out.println(isSorted(new double[]{42.0}));	
-		System.out.println(isSorted(new double[]{42.0, 27.0}));
-		System.out.println(isSorted(new double[]{1.5, 4.3, 7.0, 19.5, 25.1, 46.2, 7.8}));	
+//  create test arrays identical to the PracticeIt tests.
+		double[] test1 = {16.1, 12.3, 22.2, 14.4};
+		double[] test2 = {1.5, 4.3, 7.0, 19.5, 25.1, 46.2};
+		double[] test3 = {42.0};
+		double[] test4 = {42.0, 27.0};
+		double[] test5 = {1.5, 4.3, 7.0, 19.5, 25.1, 46.2, 7.8};
+		
+//  run test arrays through isSorted method, with expected result in comments.		
+		System.out.println("Is test1 Sorted? " + isSorted(test1)); // false
+		System.out.println("Is test2 Sorted? " + isSorted(test2)); // true
+		System.out.println("Is test3 Sorted? " + isSorted(test3)); // true	
+		System.out.println("Is test4 Sorted? " + isSorted(test4)); // false
+		System.out.println("Is test5 Sorted? " + isSorted(test5)); // false	
 	} // end main method
 
 //  method that returns a boolean result, with an array of doubles as a parameter.
